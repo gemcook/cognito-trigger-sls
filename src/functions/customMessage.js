@@ -22,9 +22,9 @@ export const customMessage = (event, config) => {
         }
         // SettingPassword
         case 'CustomMessage_ForgotPassword': {
-          const link = `
-              ${config.resetPasswordRedirectPath}
-            ?username=${username}`;
+          const link = `${
+            config.resetPasswordRedirectPath
+          }?username=${username}`;
           const email = createSettingPasswordEmail(_event, link, config);
 
           _event.response.emailSubject = `${config.prefix}${email.subject}`;
@@ -35,7 +35,7 @@ export const customMessage = (event, config) => {
           break;
       }
 
-      reject(_event);
+      resolve(_event);
     } catch (error) {
       reject(error);
     }
