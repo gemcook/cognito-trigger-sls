@@ -1,2 +1,2 @@
 /* @flow */
-export {default as EchoMan} from './EchoMan';
+export {EchoMan} from './EchoMan';
