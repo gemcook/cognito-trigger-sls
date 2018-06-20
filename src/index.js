@@ -1,4 +1,2 @@
 /* @flow */
-export function happy() {
-  console.log('HAPPY!!');
-}
+export {default as EchoMan} from './EchoMan';
