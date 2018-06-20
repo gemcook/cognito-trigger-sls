@@ -7,7 +7,8 @@ export const createSignUpEmail = (event, link, config) => {
   const code = request.codeParameter;
 
   const template = createSignUpTemplate(config);
-
+  console.log(config);
+  console.log(template);
   const message = template.message
     .replace(/%\{LINK\}%/g, link)
     .replace(/%\{EMAIL\}%/g, request.userAttributes.email)
