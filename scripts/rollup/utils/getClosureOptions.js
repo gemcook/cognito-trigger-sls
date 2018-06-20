@@ -3,7 +3,7 @@ module.exports = function getClosureOptions() {
     {},
     {
       compilationLevel: 'SIMPLE',
-      languageIn: 'ECMASCRIPT6',
+      languageIn: 'ECMASCRIPT8',
       languageOut: 'ECMASCRIPT5_STRICT',
       env: 'CUSTOM',
       warningLevel: 'QUIET',

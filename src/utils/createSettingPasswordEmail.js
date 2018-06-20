@@ -5,7 +5,6 @@ export const createSettingPasswordEmail = (event, link, config) => {
   const email = {};
   const request = event.request;
   const code = request.codeParameter;
-
   const template = createSettingPasswordTemplate(config);
 
   const message = template.message

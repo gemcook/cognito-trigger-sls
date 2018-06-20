@@ -44,7 +44,7 @@ async function build() {
         closure(getClosureOptions()),
         // TODO: COPYRIGHT
         // stripBanner(),
-        isProduction && prettier(),
+        // isProduction && prettier(),
       ],
     });
 
