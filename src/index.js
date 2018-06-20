@@ -1,2 +1,2 @@
 /* @flow */
-export {EchoMan} from './EchoMan';
+export {customMessage} from './functions/customMessage';

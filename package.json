@@ -1,6 +1,6 @@
 {
   "name": "@gemcook/cognito-trigger-sls",
-  "version": "1.1.0",
+  "version": "1.1.7",
   "main": "lib/index.js",
   "repository": "https://shsssskn@github.com/gemcook/cognito-trigger-sls.git",
   "author": "shsssskn <s.nishino@gemcook.com>",
@@ -52,5 +52,7 @@
     "build:umd": "node ./scripts/rollup/umd.build.js",
     "prepublishOnly": "make prepublish"
   },
-  "dependencies": {}
+  "dependencies": {
+    "js-base64": "^2.4.5"
+  }
 }
