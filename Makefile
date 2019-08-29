@@ -1,15 +1,9 @@
-clean:
-	rm -rf ./lib/
+# ライブラリのためのビルドをする
+.PHONY: build
+build:
+	yarn run rollup -c
 
-build-umd:
-	NODE_PATH=$(shell which node) \
-	NODE_ENV=production \
-	BABEL_ENV=production \
-	yarn run build:umd
-
-prepublish:
-	$(MAKE) clean
-	$(MAKE) build-umd
-
+# ライブラリの publish をする
+.PHONY: publish
 publish:
 	yarn publish --access public
