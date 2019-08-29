@@ -1,4 +1,3 @@
-/* @flow */
 export const createSignUpTemplate = config => ({
   subject: `${config.appName} --- ${config.signUpSubject}`,
   message: `
@@ -143,18 +142,14 @@ export const createSignUpTemplate = config => ({
       <div
         class="mail_body"
       >
-        <div style="margin-bottom: 25px">最近作成した${
-          config.appName
-        }アカウントの登録を完了するにはアカウントの認証を行ってください。</div>
+        <div style="margin-bottom: 25px">最近作成した${config.appName}アカウントの登録を完了するにはアカウントの認証を行ってください。</div>
         <div class="verify"> <code class="verify_code"> %{CODE}% </code> </div>
         <div style="margin-top: 12px; margin-bottom: 25px;box-sizing: border-box;">
           <![if !mso]>
           <a href="%{LINK}%" class="ui facebook button">アカウントを認証</a>
           <![endif]>
           <!--[if mso]>
-          <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="%{LINK}%" style="mso-width-percent:980;height:80px;" arcsize="9%" fillcolor="${
-            config.mainColor
-          }" stroke="f">
+          <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="%{LINK}%" style="mso-width-percent:980;height:80px;" arcsize="9%" fillcolor="${config.mainColor}" stroke="f">
             <v:textbox style="mso-fit=-shape-to-text:t" inset="0px,11px,0px,11px">
               <center style="font-size:18px;line-height:22px;color:#FFFFFF;
                 font-family:Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;

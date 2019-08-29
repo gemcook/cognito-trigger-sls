@@ -1,4 +1,3 @@
-/* @flow */
 import {createSignUpTemplate} from './misc';
 
 export const createSignUpEmail = (event, link, config) => {

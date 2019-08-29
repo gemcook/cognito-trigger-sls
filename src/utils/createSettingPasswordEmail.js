@@ -1,4 +1,3 @@
-/* @flow */
 import {createSettingPasswordTemplate} from './misc';
 
 export const createSettingPasswordEmail = (event, link, config) => {
