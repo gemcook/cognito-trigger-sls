@@ -1,6 +1,6 @@
 {
   "name": "@gemcook/cognito-trigger-sls",
-  "version": "1.17.2",
+  "version": "1.17.3",
   "main": "lib/index.js",
   "repository": "https://shsssskn@github.com/gemcook/cognito-trigger-sls.git",
   "author": "shsssskn <s.nishino@gemcook.com>",
